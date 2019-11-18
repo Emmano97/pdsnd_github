@@ -153,8 +153,7 @@ def load_data(city, month, day):
     Returns:
         df - Pandas DataFrame containing city data filtered by month and day
     """
-    start_time = time.time()
-
+    
     # load city's data from file in dataframe
     df = pd.read_csv(CITY_DATA[city])
 
@@ -263,7 +262,6 @@ def trip_duration_stats(df):
     total_travel_time = int(df['Trip Duration'].sum())
     print('    Total travel time:   ', total_travel_time, 'seconds')
     print('                             ', convert_seconds_to_date(total_travel_time))
-
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-' * 40)
 
@@ -309,7 +307,6 @@ def main():
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
-
         time_stats(df)
         station_stats(df)
         trip_duration_stats(df)
@@ -317,7 +314,6 @@ def main():
 
         while True:
             records_to_show = df.head(number_of_records)
-       
             print(records_to_show)
             
             if(number_of_records >= df['Gender'].count()):
