@@ -18,4 +18,4 @@ new_york_city.csv
 washington.csv
 
 ### Credits
-Udacity staff and mentors
+ http://www.udacity.com and http://www.techleaders.eg/aal/git
