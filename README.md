@@ -16,6 +16,7 @@ Project for Udacity Programming for Data Science Nanodegree Program
 chicago.csv
 new_york_city.csv
 washington.csv
+bikeshare_2.py
 
 ### Credits
  http://www.udacity.com and http://www.techleaders.eg/aal/git
